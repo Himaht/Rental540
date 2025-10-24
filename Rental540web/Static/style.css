@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.revenue {
+    font-size: 2rem;
+    color: #28a745;
+    font-weight: bold;
+}
