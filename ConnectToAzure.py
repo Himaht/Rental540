@@ -65,7 +65,7 @@ def home():
     except Exception as e:
         return f"<h3 style='color:red;'>Error: {e}</h3>"
 
-    return render_template('home.html',
+    return render_template('index.html',
                            locations=locations,
                            total_revenue=total_revenue,
                            selected_location=selected_location,
@@ -73,3 +73,4 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
