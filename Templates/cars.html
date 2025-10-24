@@ -1,0 +1,55 @@
+<!-- templates/cars.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ vehicle_type | default('Vehicle') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Rental 540</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/reservations">Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/vehicles">Vehicles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="mb-4">{{ vehicle_type | default('Vehicles') }}</h2>
+        <div class="row">
+            {% for car in cars %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename=car.Image | default('default-car.jpg')) }}" 
+                         class="card-img-top" alt="{{ car.Name | default('Car') }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ car.Name | default('Unknown') }}</h5>
+                        <p class="card-text">
+                            <strong>Make:</strong> {{ car.Make | default('N/A') }}<br>
+                            <strong>Model:</strong> {{ car.Model | default('N/A') }}<br>
+                            <strong>Year:</strong> {{ car.Year | default('N/A') }}<br>
+                            <strong>Mileage:</strong> {{ car.CurrentMileage | default('N/A') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
