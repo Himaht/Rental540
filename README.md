@@ -1,4 +1,5 @@
 Rental540 – Car Rental Management System
+
 A full-stack rental management platform built with PHP, MySQL, HTML/CSS, JavaScript, and Azure cloud integration.
 
 📌 Overview
