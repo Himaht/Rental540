@@ -13,6 +13,7 @@ Reservation workflows
 Cloud connectivity
 
 ✨ System Features
+
 SQL Server database on Azure
 MySQL relational database structure (local version)
 PHP backend with secure database connection
