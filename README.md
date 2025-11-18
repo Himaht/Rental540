@@ -70,10 +70,10 @@ Pulls a list of all rental locations
 ⭐ How the Azure Connection Works
 The code uses Python + pyodbc to make a secure connection directly to your Azure SQL server.
 🔑 Connection details included:
-server = 'rental540.database.windows.net'
+server = '{ServerName}'
 database = 'CloudRental540'
 username = 'heema'
-password = ''
+password = '{password}'
 driver = '{ODBC Driver 18 for SQL Server}'
 
 🚀 Future Enhancements
