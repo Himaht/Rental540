@@ -78,11 +78,11 @@ driver = '{ODBC Driver 18 for SQL Server}'
 
 🚀 Future Enhancements
 
-Online payment integration
-Admin analytics dashboard (charts & KPIs)
-Email notifications
-Vehicle image carousel
-Export reports to Excel/PDF
+1.Online payment integration
+2.Admin analytics dashboard (charts & KPIs)
+3.Email notifications
+4.Vehicle image carousel
+5.Export reports to Excel/PDF
 
 👩🏽‍💻 Author
 Rahimatu Yushawu
