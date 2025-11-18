@@ -41,7 +41,7 @@ Git & GitHub
 VSCode
 
 ⚙️ Installation Guide
-1. Clone the Repository - git clone https://github.com/your-username/Rental540.git
+1. Clone the Repository - git clone https://github.com/Himaht/Rental540.git
 
 2. Move the Project to Your Server Root - C:/wamp64/www/Rental540
 3. Import the Database
