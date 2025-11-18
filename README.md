@@ -3,6 +3,7 @@ Rental540 – Car Rental Management System
 A full-stack rental management platform built with PHP, MySQL, HTML/CSS, JavaScript, and Azure cloud integration.
 
 📌 Overview
+
 Rental540 is a web-based car rental management system designed to make it easy for customers to book vehicles and for admins to manage rentals, vehicles, customers, and payments.
 The project began as coursework and expanded into a realistic, functional system with:
 Validation
